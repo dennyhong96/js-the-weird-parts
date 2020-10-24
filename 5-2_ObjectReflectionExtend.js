@@ -50,7 +50,7 @@ lastname : Doe
 /* -------------------------------------- Extend ------------------------------------ */
 /* ---------------------------------------------------------------------------------- */
 
-// Use property / methods of other object without putting them on prototype chain
+// Use property/methods of other objects without putting them on the prototype chain.
 
 const jane = {
   address: "111 Main St.",

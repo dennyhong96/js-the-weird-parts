@@ -18,6 +18,7 @@ console.log(typeof f); // object
 
 const g = [];
 console.log(typeof g); // object
+console.log(g instanceof Array); // true
 console.log(Object.prototype.toString.call(g)); // [object Array]
 
 const h = function () {};

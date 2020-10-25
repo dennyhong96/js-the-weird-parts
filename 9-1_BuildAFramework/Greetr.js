@@ -82,6 +82,10 @@
     self.firstname = firstname || "";
     self.lastname = lastname || "";
     self.language = language || "en";
+
+    self.validate(); // Validate language upon init
+
+    // returns `this` by default
   };
 
   // The instance user created via function constructor can use

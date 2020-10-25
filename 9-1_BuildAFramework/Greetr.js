@@ -56,6 +56,24 @@
       this.validate(); // validate
       return this;
     },
+    HTMLGreeting(selector, formal) {
+      if (!$) {
+        throw "JQUERY_NOT_LOADED";
+      }
+      if (!selector) {
+        throw "MISSING_JQUERY_SELECTOR";
+      }
+
+      let msg;
+      if (formal) {
+        msg = this.formalGreeting();
+      } else {
+        msg = this.greeting();
+      }
+
+      $(selector).html(msg); // Sets HTML
+      return this; // make it chainable
+    },
   };
 
   // Function constructors
